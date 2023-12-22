@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Define main variables */
+:root {
+  --primary-color: #1f99d5;
+  --bg-color: white;
+  --accent-color: #062059;
+  --muted-color: #979797;
+}
+
+/* Default CSS */
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Anchor */
+a {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Display */
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+/* Flex Options */
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Flex Spacing */
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-6px {
+  gap: 6px;
+}
+
+/* Spacing (Margins and Paddinng) */
+.px-15px {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-12px {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-6px {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.px-24px {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.px-12px {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.py-8px {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.mt-12px {
+  margin-top: 12px;
+}
+
+.mt-24px {
+  margin-top: 24px;
+}
+
+.-mt-4px {
+  margin-top: -4px;
+}
+
+.mb-6px {
+  margin-bottom: 6px;
+}
+
+.mb-24px {
+  margin-bottom: 24px;
+}
+
+.my-24px {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.ml-8px {
+  margin-left: 8px;
+}
+
+.mr-28px {
+  margin-right: 28px;
+}
+/* Text Align */
+.text-center {
+  text-align: center;
+}
+
+/* Floats */
+.float-right {
+  float: right;
+}
+
+/* Borders */
+.border-t-gray {
+  border-top: 1px solid var(--muted-color);
+}
+
+/* Width */
+.min-w-max {
+  min-width: max-content;
+}
+
+/* Text Transform */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Trannsition */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+/* Custom Classes */
+.nav-menu {
+  list-style: none;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.patient-link {
+  padding: 4px 6px 6px 12px;
+}
+
+.link-box-water-blue {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  line-height: 32px;
+  min-width: 222px;
+  margin: 0 auto;
+}
+
+.link-box-water-transparent {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  line-height: 32px;
+  min-width: 222px;
+}
+
+.hover-border-t-red {
+  border-top: 6px solid transparent;
+}
+
+.border-t-red {
+  border-top: 6px solid #d0191f;
+}
+
+/* Hover effects */
+.link-box-water-blue:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.link-box-water-transparent:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hover-border-t-red:hover {
+  border-top: 6px solid #d0191f;
+  transition: border 0.4s;
+}
