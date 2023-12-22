@@ -6,6 +6,8 @@
   --bg-color: white;
   --accent-color: #062059;
   --muted-color: #979797;
+  --danger-color: #d0191f;
+  --secondary-color: #015d98;
 }
 
 /* Default CSS */
@@ -30,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+/* Superscript */
+sup {
+  font-size: 50%;
+  top: -0.67em;
+}
+
 /* Display */
 
 .flex {
@@ -38,6 +46,11 @@ a {
 
 .block {
   display: block;
+}
+
+/* Positions */
+.absolute {
+  position: absolute;
 }
 
 /* Flex Options */
@@ -196,7 +209,57 @@ a {
 }
 
 .border-t-red {
-  border-top: 6px solid #d0191f;
+  border-top: 6px solid var(--danger-color);
+}
+
+.hero-bg {
+  background-color: var(--secondary-color);
+}
+
+.hero-bg img {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: clip;
+}
+
+.hero-container {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-wrapper {
+  color: var(--bg-color);
+  max-width: 790px;
+}
+
+.hero-wrapper h1 {
+  font-size: 70px;
+  line-height: 1em;
+  max-width: 570px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 900;
+}
+
+.hero-wrapper p {
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  max-width: 570px;
+  font-size: 20px;
 }
 
 /* Hover effects */
