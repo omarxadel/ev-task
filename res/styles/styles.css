@@ -8,6 +8,8 @@
   --muted-color: #979797;
   --danger-color: #d0191f;
   --secondary-color: #015d98;
+  --dark-gray-color: #454d46;
+  --gray-color: #b8b0b3;
 }
 
 /* Default CSS */
@@ -102,6 +104,10 @@ sup {
   padding-right: 24px;
   padding-left: 24px;
 }
+.px-30px {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 .px-12px {
   padding-right: 12px;
@@ -116,6 +122,10 @@ sup {
   margin-top: 12px;
 }
 
+.mt-15px {
+  margin-top: 15px;
+}
+
 .mt-16px {
   margin-top: 16px;
 }
@@ -124,16 +134,40 @@ sup {
   margin-top: 24px;
 }
 
+.mt-30px {
+  margin-top: 30px;
+}
+
 .-mt-4px {
   margin-top: -4px;
+}
+
+.mt-50px {
+  margin-top: 50px important;
+}
+
+.mt-110px {
+  margin-top: 110px;
 }
 
 .mb-6px {
   margin-bottom: 6px;
 }
 
+.mb-15px {
+  margin-bottom: 15px;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
 .mb-24px {
   margin-bottom: 24px;
+}
+
+.mb-35px {
+  margin-bottom: 35px;
 }
 
 .my-24px {
@@ -167,9 +201,56 @@ sup {
   min-width: max-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
+/* Colors */
+.text-accent-color {
+  color: var(--accent-color);
+}
+
+.text-dark-gray {
+  color: var(--dark-gray-color);
+}
+
+/* Border */
+.border {
+  border: 1px solid;
+}
+
+.border-gray {
+  border-color: var(--gray-color);
+}
+
 /* Text Transform */
 .uppercase {
   text-transform: uppercase;
+}
+
+/* Typography */
+
+.text-md {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-40px {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.text-20px {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.font-extrabold {
+  font-weight: 900;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 /* Trannsition */
@@ -264,6 +345,12 @@ sup {
   line-height: 32px;
   max-width: 570px;
   font-size: 20px;
+}
+
+.container-970 {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hover effects */
